@@ -1,0 +1,70 @@
+<!--━━ input ━━-->
+<!--
+(input)="updateServerName($event)"
+ngModel:
+	• Enables two-way binding that will update
+	  the value where ever it is changed
+-->
+
+<!--━━ Label ━━-->
+<label >
+	Server Name
+<input type="text"
+       class="form-control"
+       [(ngModel)]="serverName"
+>
+</label >
+<!-- ━━━━━━━━━━━━━ -->
+
+<!--━━ Server Name ━━-->
+<!--<div class="server-name">-->
+<!--<p >-->
+<!--	Server Name Result:-->
+<!--	<strong >-->
+<!--		{{ serverName }}-->
+<!--	</strong >-->
+<!--</p >-->
+<!--</div>-->
+<!-- ━━━━━━━━━━━━━ -->
+<hr >
+
+<!--━━ Button(Add Server) ━━-->
+<div class="button" >
+<Button class="btn btn-primary pad-bottom "
+        [disabled]="!allowNewServer"
+        (click)="onCreateServer()"
+>Add Server
+</Button >
+</div >
+<!-- ━━━━━━━━━━━━━ -->
+
+<!--━━ Server Creation Status ━━-->
+<p >
+  <strong >
+    {{ serverCreationStatus }}
+  </strong >
+</p >
+<hr >
+<!-- ━━━━━━━━━━━━━ -->
+
+<!--━━ Property Binding ━━-->
+<!--<p [innerText]="!allowNewServer" ></p >-->
+<!-- ━━━━━━━━━━━━━ -->
+
+<!--━━ Server was created ━━-->
+<p *ngIf="isServerCreated
+	 else noServer" >
+	<strong >
+		New server was created: ( {{ serverName.toUpperCase() }} )
+	</strong >
+</p >
+<ng-template #noServer >
+	<p ><strong >No server active!</strong ></p >
+</ng-template >
+<hr >
+<!-- ━━━━━━━━━━━━━ -->
+
+<!--━━ app server ━━-->
+<app-server ></app-server >
+<app-server ></app-server >
+<!-- ━━━━━━━━━━━━━ -->
