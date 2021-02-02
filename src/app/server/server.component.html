@@ -8,11 +8,13 @@
 <hr >
 
 <!-- ━━━━ Comment Info ━━━━ -->
-<p>
+<p [ngStyle]="{backgroundColor: getColor()}"
+   [ngClass]="{online: serverStatus === 'online'}"
+>
   <strong>
-    [ {{ 'Server' }} ]
-    with  a ID [ {{ servedId }} ]
-    is [ {{ serverStatus }} ]
+    ( {{ 'Server' }} )
+    with  a ID ( {{ servedId }} )
+    is ( {{ serverStatus }} )
   </strong>
 </p>
 <!--━━━━━━━━━━━━━-->

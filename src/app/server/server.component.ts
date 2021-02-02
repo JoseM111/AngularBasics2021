@@ -3,6 +3,11 @@ import {Component} from '@angular/core';
 @Component({
     selector: 'app-server',
     templateUrl: './server.component.html',
+    styles: [`
+        .online {
+            color: white;
+        }
+    `]
 })
 // #™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 export class ServerComponent {
@@ -33,7 +38,9 @@ export class ServerComponent {
     }
     /// --> : getServerStatus
 
-    /**| ™- Checks how many times this function is ran. |*/
-
+    getColor = () =>
+        this.serverStatus === 'online'
+            ? 'green' : 'red'
+    /// --> : getColor
 }
 /// --> : ServerComponent
