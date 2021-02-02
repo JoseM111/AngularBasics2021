@@ -1,5 +1,5 @@
 # AngularBasicsFeb2021
-`A project going over Angular syntax & basics`
+```A project going over Angular syntax & basics```
 
 ### EXAMPLE
 
