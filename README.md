@@ -3,4 +3,5 @@
 
 ### EXAMPLE
 
-<img width="499" alt="Screen Shot 2021-02-02 at 11 13 00 AM" src="https://user-images.githubusercontent.com/44812411/106585588-c957f400-6547-11eb-93a4-5697eec9661c.png">  <img width="501" alt="Screen Shot 2021-02-02 at 11 12 46 AM" src="https://user-images.githubusercontent.com/44812411/106585597-ca892100-6547-11eb-8a12-e662501020fe.png">
+
+<img width="216" alt="Screen Shot 2021-02-02 at 11 12 46 AM" src="https://user-images.githubusercontent.com/44812411/106586033-471bff80-6548-11eb-9e5f-f2f558da7dd1.png">  <img width="216" alt="Screen Shot 2021-02-02 at 11 13 00 AM" src="https://user-images.githubusercontent.com/44812411/106586039-47b49600-6548-11eb-8065-cf0d82ad70ed.png">
